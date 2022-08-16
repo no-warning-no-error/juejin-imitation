@@ -11,7 +11,9 @@ Imitating JueJin page in Vue and ElementUI
 
 打开命令行终端，进入你要存放项目代码的文件夹，输入：
 
-> git clone https://github.com/no-warning-no-error/juejin-imitation.git
+```shell
+git clone https://github.com/no-warning-no-error/juejin-imitation.git
+```
 
 ### 2. 新建开发分支
 
@@ -23,24 +25,33 @@ git branch -a  # 可查看项目的所有分支
 
 新建个人开发分支：
 
-> git switch -c xxx-dev
+```shell
+git switch -c xxx-dev
+```
 
 此时已经切换到了新建分支 （ `git branch` 可查看当前所在分支），可以自由开发。这个分支的初始内容是 `main` 分支的内容，如果你想继承单锦鹏的代码，先切换到他的分支：
 
-> git switch shanjp-dev
+```shell
+git switch shanjp-dev
+```
 
 此时编辑器中是单锦鹏的代码，再新建分支，新的分支的初始内容继承自他的分支。
 
 删除分支，要先切换到别的分支：
 
-> git branch -d xxx-dev
+```shell
+git branch -d xxx-dev
+```
 
 ### 3. 运行代码
 
-> npm install
+```shell
+npm install
+```
 
-> npm run dev  # 或 serve
-
+```shell
+npm run dev  # 或 serve
+```
 
 ### 4. 提交代码
 
@@ -56,6 +67,8 @@ git branch -a  # 可查看项目的所有分支
 
 如果 `git pull` 之后出现冲突，在编辑器中选择需要保留的更改，解决所有 `<<<=== ... ===>>>` 包裹起来的冲突后再次提交代码：
 
-> git commit -am "注释"  # -am 包括了 git add .
+```shell
+git commit -am "注释"  # -am 包括了 git add .
+```
 
 `git push origin xxx-dev` 推送到线上 xxx-dev 分支。
