@@ -1,0 +1,6 @@
+/* 主体居中布局 */
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
